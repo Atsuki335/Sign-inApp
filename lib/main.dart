@@ -30,23 +30,21 @@ class WelcomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: kBackgroundColor,
-      body: SafeArea(
-          child: SingleChildScrollView(
-        child: Column(
-          children: [
-            _Header(),
-            Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 32),
-                child: _SignInForm()),
-            Padding(
-              padding: const EdgeInsets.symmetric(vertical: 64),
-              child: _Footer(),
-            )
-          ],
-        ),
-      )),
-    );
+        backgroundColor: kBackgroundColor,
+        body: SingleChildScrollView(
+          child: Column(
+            children: [
+              _Header(),
+              Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 32),
+                  child: _SignInForm()),
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 64),
+                child: _Footer(),
+              )
+            ],
+          ),
+        ));
   }
 }
 
